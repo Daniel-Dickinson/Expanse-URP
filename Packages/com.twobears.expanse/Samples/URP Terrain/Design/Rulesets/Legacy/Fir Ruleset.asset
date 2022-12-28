@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7677811422276419645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e8f6254bb624648a83afa91567f807, type: 3}
+  m_Name: Texture Sample
+  m_EditorClassIdentifier: 
+  active: 1
+  textureSet: {fileID: 11400000, guid: b901782ad33fb4842885fd64a85e0b76, type: 2}
+  sampleHeight: 1
+  sampleNormal: 0
+  sampleColor: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c980280dc99bb40b5cc81ad069a013, type: 3}
+  m_Name: Fir Ruleset
+  m_EditorClassIdentifier: 
+  modifiers:
+  - {fileID: 5963679047718686076}
+  - {fileID: 8662253473551228259}
+  - {fileID: 3318368633365264534}
+  - {fileID: 5045175732397945784}
+  - {fileID: -7677811422276419645}
+  - {fileID: 1766893711197207159}
+--- !u!114 &1766893711197207159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f48e89f204339ba4b9367334ab0513e6, type: 3}
+  m_Name: Texture Clip
+  m_EditorClassIdentifier: 
+  active: 1
+  textureSet: {fileID: 11400000, guid: b901782ad33fb4842885fd64a85e0b76, type: 2}
+  rMin: 0
+  rMax: 0.52692306
+  gMin: 0.3901099
+  gMax: 1
+  bMin: 0
+  bMax: 1
+--- !u!114 &3318368633365264534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38912306700d6ae4e87eb3a8515b17d3, type: 3}
+  m_Name: Perlin Clip
+  m_EditorClassIdentifier: 
+  active: 1
+  min: 0.48481435
+  max: 1
+  set: {fileID: 11400000, guid: eb239b1470cc5fd4f8df5c6b8cc7c735, type: 2}
+--- !u!114 &5045175732397945784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38912306700d6ae4e87eb3a8515b17d3, type: 3}
+  m_Name: Perlin Clip
+  m_EditorClassIdentifier: 
+  active: 1
+  min: 0
+  max: 0.5948775
+  set: {fileID: 11400000, guid: a6ef781d8465037488bf4a323398d826, type: 2}
+--- !u!114 &5963679047718686076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a60232983e3e14a80046d16ee437a4, type: 3}
+  m_Name: Random Scale
+  m_EditorClassIdentifier: 
+  active: 1
+  min: 0.8
+  max: 1.2
+--- !u!114 &8662253473551228259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e69cba8481a05249962b26393cec76c, type: 3}
+  m_Name: Random Offset
+  m_EditorClassIdentifier: 
+  active: 1
+  range: {x: 6, y: 0, z: 6}

@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7386603558586245167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23e8933bb7be6154e8ce5e9edbd47124, type: 3}
+  m_Name: Contour Scale
+  m_EditorClassIdentifier: 
+  active: 1
+  contourMin: 0.25796008
+  contourMax: 1
+  channel: 1
+  scaleMin: {x: 0.6, y: 0.4, z: 0.6}
+  scaleMax: {x: 1.2, y: 0.8, z: 1.2}
+--- !u!114 &-4457299407083067070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a60232983e3e14a80046d16ee437a4, type: 3}
+  m_Name: Random Scale
+  m_EditorClassIdentifier: 
+  active: 1
+  min: 0.6
+  max: 1.2
+--- !u!114 &-856161914869323803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a467a27099a77b0458caeb04016b5a8e, type: 3}
+  m_Name: Contour Clip
+  m_EditorClassIdentifier: 
+  active: 1
+  rMin: 0.12694041
+  rMax: 1
+  gMin: 0.076679915
+  gMax: 1
+  bMin: 0.06809338
+  bMax: 1
+  aMin: 0.10700389
+  aMax: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c980280dc99bb40b5cc81ad069a013, type: 3}
+  m_Name: TidalLight_MossyStones_RS
+  m_EditorClassIdentifier: 
+  modifiers:
+  - {fileID: 3775353153898155556}
+  - {fileID: 2593748722569450643}
+  - {fileID: -4457299407083067070}
+  - {fileID: -856161914869323803}
+  - {fileID: -7386603558586245167}
+--- !u!114 &2593748722569450643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38912306700d6ae4e87eb3a8515b17d3, type: 3}
+  m_Name: Perlin Clip
+  m_EditorClassIdentifier: 
+  active: 1
+  min: 0.52915883
+  max: 0.7174393
+  set: {fileID: 11400000, guid: 163182e764ebad747b5f41a787b72ce0, type: 2}
+--- !u!114 &3775353153898155556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e8f6254bb624648a83afa91567f807, type: 3}
+  m_Name: Texture Sample
+  m_EditorClassIdentifier: 
+  active: 1
+  sampleHeight: 1
+  sampleNormal: 0
+  sampleColor: 0

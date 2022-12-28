@@ -1,0 +1,197 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Grass
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    RenderType: Opaque
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaClip: 0
+    - _AlphaToMask: 0
+    - _AmbientStrength: 1
+    - _BaseStrength: 1.24
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 1
+    - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DetailAlbedoMapScale: 1
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _DstBlendAlpha: 0
+    - _EnvironmentReflections: 1
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _Metallic: 0
+    - _Metallicity: 0
+    - _Moss_Height: 40
+    - _Moss_Strength_One: 0
+    - _Moss_Strength_Two: 0
+    - _Mouse_Density: 0.2
+    - _NormalStrength: 4
+    - _OcclusionStrength: 1
+    - _Offset: 1
+    - _Parallax: 0.005
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _SS_Bot: 0.08
+    - _SS_Top: 0.2
+    - _SharpnessFour: 0.8
+    - _SharpnessOne: 0.8
+    - _SharpnessThree: 0.8
+    - _SharpnessTwo: 0.8
+    - _Sharpness_Four: 0.8
+    - _Sharpness_One: 0.35
+    - _Sharpness_Three: 0.8
+    - _Sharpness_Two: 0.4
+    - _ShearPower: 1
+    - _Shear_Offset: 0
+    - _Smoothness: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
+    - _Surface: 0
+    - _TideBlend: 40
+    - _TideOffset: -20
+    - _ValleyDepth: 150
+    - _Vertex_Color_Weight: 0
+    - _WindSpeed: 10
+    - _WindStrength: 1
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _BaseColor: {r: 0.19215687, g: 0.2, b: 0.12941177, a: 1}
+    - _Color: {r: 0.19215682, g: 0.19999996, b: 0.12941173, a: 1}
+    - _EastColor: {r: 0.19058824, g: 0.2, b: 0.12941177, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MossColor: {r: 0.31902948, g: 0.42452827, b: 0.24630645, a: 1}
+    - _Moss_Scale: {r: 0, g: 0, b: 0, a: 0}
+    - _Moss_Scale_One: {r: 0.1, g: 0.1, b: 0.1, a: 0}
+    - _Moss_Scale_Two: {r: 0.1, g: 0.1, b: 0.1, a: 0}
+    - _Noise_Color_High: {r: 1, g: 1, b: 1, a: 1}
+    - _Noise_Color_Low: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
+    - _Noise_Four_Color_High: {r: 0, g: 0, b: 0, a: 0}
+    - _Noise_Four_Color_Low: {r: 0.33018863, g: 0.33018863, b: 0.33018863, a: 1}
+    - _Noise_One_Color_High: {r: 1, g: 1, b: 1, a: 1}
+    - _Noise_One_Color_Low: {r: 0.8773585, g: 0.8519633, b: 0.8152813, a: 1}
+    - _Noise_Scale: {r: 0.04, g: 0.8, b: 0.04, a: 0}
+    - _Noise_Scale_Four: {r: 0.6, g: 1, b: 1, a: 0}
+    - _Noise_Scale_One: {r: 0.04, g: 0.04, b: 0.08, a: 0}
+    - _Noise_Scale_Three: {r: 0.2, g: 0.5, b: 0.5, a: 0}
+    - _Noise_Scale_Two: {r: 0.06, g: 0.06, b: 0.08, a: 0}
+    - _Noise_Three_Color_High: {r: 0, g: 0, b: 0, a: 0}
+    - _Noise_Three_Color_Low: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+    - _Noise_Two_Color_High: {r: 0.6509804, g: 0.6509804, b: 0.6509804, a: 1}
+    - _Noise_Two_Color_Low: {r: 0.7372549, g: 0.73081243, b: 0.6325647, a: 1}
+    - _ShearColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _TideColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+    - _ValleyColor: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    - _WestColor: {r: 0.14248367, g: 0.16078432, b: 0.105882354, a: 1}
+    - _WindDirection: {r: 0, g: 0, b: 1, a: 0}
+    - _WindScaleDetail: {r: 2, g: 2, b: 0, a: 0}
+    - _WindScaleOne: {r: 0.01, g: 0.1, b: 0, a: 0}
+    - _WindScaleTwo: {r: 0.04, g: 0.08, b: 0, a: 0}
+    - _WindSpeed: {r: 25, g: 0, b: 0, a: 0}
+    - _WindSpeedOne: {r: 10, g: 20, b: 0, a: 0}
+    - _WindSpeedTwo: {r: -10, g: 14, b: 0, a: 0}
+    - _Wind_Color: {r: 0.88, g: 0.88, b: 0.88, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &7992546889098352304
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7

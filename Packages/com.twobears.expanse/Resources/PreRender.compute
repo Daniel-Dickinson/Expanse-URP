@@ -1,0 +1,123 @@
+#pragma kernel CSMain
+
+#include "Expanse.cginc"
+
+//Uniform data
+uniform float _OptDistance;
+uniform float _LOD1Distance;
+uniform float _LOD2Distance;
+uniform float _LOD3Distance;
+uniform float _CullDistance;
+
+uniform int _MaxCount;
+
+//LOD levels
+uniform bool _UseLOD1;
+uniform bool _UseLOD2;
+uniform bool _UseLOD3;
+
+//Bounds data
+uniform float3 _BoundsCenter;
+uniform float3 _BoundsExtent;
+
+uniform float _DistanceBias;
+uniform float _DensityBias;
+
+//Output buffers
+AppendStructuredBuffer<int> _LOD0;
+AppendStructuredBuffer<int> _LOD1;
+AppendStructuredBuffer<int> _LOD2;
+AppendStructuredBuffer<int> _LOD3;
+
+//Culling
+bool PointOutsideCameraFrustum(float4 clipPosition)
+{
+	return (clipPosition.z > clipPosition.w
+		|| clipPosition.x < -clipPosition.w || clipPosition.x > clipPosition.w
+		|| clipPosition.y < -clipPosition.w || clipPosition.y > clipPosition.w
+		);
+}
+bool FrustumCull(float3 position, float distance)
+{
+	//Keep all instances within opt distance
+	if (distance < _OptDistance) return false;
+
+	//Calculate min & max points
+	float3 min = position + _BoundsCenter - _BoundsExtent;
+	float3 max = position + _BoundsCenter + _BoundsExtent;
+
+	//Calculate box corners
+	float4 boxCorners[8];
+	boxCorners[0] = float4(min.x, min.y, min.z, 1);
+	boxCorners[1] = float4(min.x, min.y, max.z, 1);
+	boxCorners[2] = float4(min.x, max.y, min.z, 1);
+	boxCorners[3] = float4(min.x, max.y, max.z, 1);
+	boxCorners[4] = float4(max.x, min.y, min.z, 1);
+	boxCorners[5] = float4(max.x, min.y, max.z, 1);
+	boxCorners[6] = float4(max.x, max.y, min.z, 1);
+	boxCorners[7] = float4(max.x, max.y, max.z, 1);
+
+	//If any point in frustum return false
+	for (int i = 0; i < 8; i++)
+	{
+		float4 clipPos = mul(_VPMatrix, boxCorners[i]);
+		if (!PointOutsideCameraFrustum(clipPos)) return false;
+	}
+
+	//If no points in frustum cull
+	return true;
+}
+
+//LODing
+void SortToLOD(int index, float distance, float density)
+{
+	//Density clip
+	if (density > _DensityBias) return;
+
+	//LOD
+	if (distance > _CullDistance * _DistanceBias)
+	{
+		return;
+	}
+	if (_UseLOD3 && distance > _LOD3Distance * _DistanceBias)
+	{
+		_LOD3.Append(index);
+		return;
+	}
+	if (_UseLOD2 && distance > _LOD2Distance * _DistanceBias)
+	{
+		_LOD2.Append(index);
+		return;
+	}
+	if (_UseLOD1 && distance > _LOD1Distance * _DistanceBias)
+	{
+		_LOD1.Append(index);
+		return;
+	}
+	_LOD0.Append(index);
+	return;
+}
+
+//Primary
+[numthreads(1024,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+	int index = id.x;
+	if (index < _MaxCount)
+	{
+		//float3 position = _RootPosition + MatrixToPosition(_PositionBuffer[index].PositionMatrix);
+
+		//Calculate properties
+		float density = _PositionBuffer[index].density;
+		float3 position = MatrixToPosition(_PositionBuffer[index].PositionMatrix);
+
+		//Calculate distance
+		float distance = Distance(position, _FrustrumPosition);
+
+		//Cull
+		if (FrustumCull(position, distance)) return;
+
+		//LOD
+		SortToLOD(index, distance, density);
+	}
+}

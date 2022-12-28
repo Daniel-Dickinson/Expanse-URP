@@ -1,0 +1,27 @@
+{
+	"name" : "com.twobears.expanse",
+	"version" : "0.1.0",
+	"description" : "Instanced Renderer",
+	"displayName" : "Expanse",
+	"unity" : "2021.1",
+	"author" :
+	{
+	"name" : "Two Bears"
+	},
+	"dependencies" :
+	{
+		"com.unity.burst" : "1.6.0",
+		"com.unity.mathematics" : "1.2.4",
+		"com.unity.shadergraph" : "12.1.0",
+		"com.unity.collections" : "1.2.3"
+	},
+	"samples" : 
+	[
+		{
+			"displayName" : "URP Terrain",
+			"description" : "Sample terrain built for the Universal Render Pipeline",
+			"path" : "Samples~/URP Terrain"
+		}
+	],
+	"hideInEditor" : false
+}

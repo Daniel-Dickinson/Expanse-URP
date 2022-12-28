@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c447f3e2d80d0241ae712cf9812452b, type: 3}
+  m_Name: Fir Large
+  m_EditorClassIdentifier: 
+  lod0: {fileID: 4300000, guid: c2e55fbd239c32248acfc6cdd64667ce, type: 3}
+  lod1: {fileID: 4300002, guid: c2e55fbd239c32248acfc6cdd64667ce, type: 3}
+  lod2: {fileID: 4300004, guid: c2e55fbd239c32248acfc6cdd64667ce, type: 3}
+  billboard: {fileID: 4300000, guid: 8d04cb8d4211b6f4bb58baeec86d5bdd, type: 3}
+  baseMaterial: {fileID: 2100000, guid: 917f413a33bf649438f56aee2d561079, type: 2}
+  billboardMaterial: {fileID: 2100000, guid: 17556b80aac49fc45b1f21f194178c01, type: 2}
+  boundsCenter: {x: 0, y: 25, z: 0}
+  boundsExtents: {x: 20, y: 25, z: 20}
+  lod1Distance: 0
+  lod2Distance: 50
+  billboardDistance: 550
+  cullDistance: 2000

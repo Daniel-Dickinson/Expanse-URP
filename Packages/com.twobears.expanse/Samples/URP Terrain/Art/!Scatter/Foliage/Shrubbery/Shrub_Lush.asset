@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c447f3e2d80d0241ae712cf9812452b, type: 3}
+  m_Name: Shrub_Lush
+  m_EditorClassIdentifier: 
+  lod0: {fileID: -8007423518850538223, guid: 6574458935b9fb849a561d15849fec39, type: 3}
+  lod1: {fileID: -8007423518850538223, guid: 6574458935b9fb849a561d15849fec39, type: 3}
+  lod2: {fileID: -8007423518850538223, guid: 6574458935b9fb849a561d15849fec39, type: 3}
+  billboard: {fileID: 0}
+  baseMaterial: {fileID: 2100000, guid: 1af88d04e61cd3e40b7ca76a7ee6f4d3, type: 2}
+  billboardMaterial: {fileID: 0}
+  boundsCenter: {x: 0, y: 2, z: 0}
+  boundsExtents: {x: 2, y: 2, z: 2}
+  lod1Distance: 400
+  lod2Distance: 400
+  billboardDistance: 1000
+  cullDistance: 400

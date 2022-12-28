@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4131042976111360184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38912306700d6ae4e87eb3a8515b17d3, type: 3}
+  m_Name: Perlin Clip
+  m_EditorClassIdentifier: 
+  active: 1
+  min: 0
+  max: 0.4388461
+  set: {fileID: 11400000, guid: f20ee737f6ff359498b1d07f43368315, type: 2}
+--- !u!114 &-3045988906526148938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38922efa882801146bf4b5e379aad17d, type: 3}
+  m_Name: Perlin Scale
+  m_EditorClassIdentifier: 
+  active: 1
+  type: 1
+  min: 0.4
+  set: {fileID: 11400000, guid: f20ee737f6ff359498b1d07f43368315, type: 2}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c980280dc99bb40b5cc81ad069a013, type: 3}
+  m_Name: Flowers Ruleset
+  m_EditorClassIdentifier: 
+  modifiers:
+  - {fileID: 5963679047718686076}
+  - {fileID: 8662253473551228259}
+  - {fileID: -3045988906526148938}
+  - {fileID: 3459004816267357956}
+  - {fileID: 5273335304964342494}
+  - {fileID: -4131042976111360184}
+--- !u!114 &3459004816267357956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e8f6254bb624648a83afa91567f807, type: 3}
+  m_Name: Texture Sample
+  m_EditorClassIdentifier: 
+  active: 1
+  textureSet: {fileID: 11400000, guid: b901782ad33fb4842885fd64a85e0b76, type: 2}
+  sampleHeight: 1
+  sampleNormal: 1
+  sampleColor: 0
+--- !u!114 &5273335304964342494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f48e89f204339ba4b9367334ab0513e6, type: 3}
+  m_Name: Texture Clip
+  m_EditorClassIdentifier: 
+  active: 1
+  textureSet: {fileID: 11400000, guid: b901782ad33fb4842885fd64a85e0b76, type: 2}
+  rMin: 0
+  rMax: 0.8012837
+  gMin: 0.4096014
+  gMax: 0.8861253
+  bMin: 0
+  bMax: 1
+--- !u!114 &5963679047718686076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a60232983e3e14a80046d16ee437a4, type: 3}
+  m_Name: Random Scale
+  m_EditorClassIdentifier: 
+  active: 1
+  min: 1
+  max: 3
+--- !u!114 &8662253473551228259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e69cba8481a05249962b26393cec76c, type: 3}
+  m_Name: Random Offset
+  m_EditorClassIdentifier: 
+  active: 1
+  range: {x: 2, y: 0, z: 2}

@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6021373711117826650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e8f6254bb624648a83afa91567f807, type: 3}
+  m_Name: Texture Sample
+  m_EditorClassIdentifier: 
+  active: 1
+  sampleHeight: 1
+  sampleNormal: 0
+  sampleColor: 0
+--- !u!114 &-3460814716483768103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb9ca174af43d749b97a50ea99a8b57, type: 3}
+  m_Name: Height Clip
+  m_EditorClassIdentifier: 
+  active: 1
+  min: 0.3686747
+  max: 1
+--- !u!114 &-1161612877078905818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1a60232983e3e14a80046d16ee437a4, type: 3}
+  m_Name: Random Scale
+  m_EditorClassIdentifier: 
+  active: 1
+  min: 2
+  max: 3
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c980280dc99bb40b5cc81ad069a013, type: 3}
+  m_Name: TidalLight_TileTrees_RS
+  m_EditorClassIdentifier: 
+  modifiers:
+  - {fileID: -6021373711117826650}
+  - {fileID: 6813567173955937074}
+  - {fileID: 1820565328172055216}
+  - {fileID: 3679649429600340585}
+  - {fileID: -1161612877078905818}
+  - {fileID: 1860980044635092644}
+  - {fileID: -3460814716483768103}
+--- !u!114 &1820565328172055216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a467a27099a77b0458caeb04016b5a8e, type: 3}
+  m_Name: Contour Clip
+  m_EditorClassIdentifier: 
+  active: 1
+  rMin: 0
+  rMax: 1
+  gMin: 0.065273836
+  gMax: 0.99999994
+  bMin: 0
+  bMax: 1
+  aMin: 0
+  aMax: 1
+--- !u!114 &1860980044635092644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e69cba8481a05249962b26393cec76c, type: 3}
+  m_Name: Random Offset
+  m_EditorClassIdentifier: 
+  active: 1
+  range: {x: 6, y: 0, z: 6}
+--- !u!114 &3679649429600340585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c08e8f32e2d7504cbfafd42ec12e556, type: 3}
+  m_Name: Contour Offset
+  m_EditorClassIdentifier: 
+  active: 1
+  contourMin: 0
+  contourMax: 0.25502297
+  offsetMin: {x: 0, y: 0, z: 0}
+  offsetMax: {x: 0, y: 0.4, z: 0}
+--- !u!114 &6813567173955937074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38912306700d6ae4e87eb3a8515b17d3, type: 3}
+  m_Name: Perlin Clip
+  m_EditorClassIdentifier: 
+  active: 1
+  min: 0
+  max: 0.4307164
+  set: {fileID: 11400000, guid: 56f34a7d247f3894bb8f1f06d8b1a9f7, type: 2}
